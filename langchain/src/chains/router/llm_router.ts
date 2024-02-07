@@ -10,10 +10,7 @@ import { ChainInputs } from "../../chains/base.js";
  * A type that represents the output schema of a router chain. It defines
  * the structure of the output data returned by the router chain.
  */
-export type RouterOutputSchema = {
-  destination: string;
-  next_inputs: { [key: string]: string };
-};
+export type RouterOutputSchema = string; //LLM router returns a string
 
 /**
  * An interface that extends the default ChainInputs interface and adds an
